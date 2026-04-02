@@ -1,0 +1,82 @@
+.cast-section {
+  background-color: #DFD7BF;
+  padding: 40px 20px;
+}
+
+.cast-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #3F2305;
+}
+
+.view-more-btn {
+  background-color: #3F2305;
+  color: #F2EAD3;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.view-more-btn:hover {
+  opacity: 0.9;
+}
+
+.cast-list {
+  cursor: grab;
+  /* Efeito de fade nas bordas do carrossel */
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.cast-list:active {
+  cursor: grabbing;
+}
+
+.cast-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cast-img {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cast-name {
+  display: block;
+  font-size: 1rem;
+  color: #3F2305;
+  margin-bottom: 5px;
+}
+
+.cast-role {
+  display: block;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+@media (min-width: 768px) {
+  .cast-img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
