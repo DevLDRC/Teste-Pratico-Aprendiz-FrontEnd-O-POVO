@@ -14,6 +14,12 @@ $(document).ready(function() {
     }
   });
 
+  // Fechar o menu ao clicar em um link (mobile)
+  $('.mobile-nav .nav-link').on('click', function() {
+    $('.mobile-nav').attr('hidden', '');
+    $('.menu-toggle').attr('aria-expanded', 'false');
+  });
+
   // Fechar o menu quando estiver em Desktop
   $(window).on('resize', function() {
     if ($(window).width() > 1024) {
